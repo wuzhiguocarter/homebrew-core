@@ -15,7 +15,7 @@ class Brpc < Formula
   def install
     system "./config_brpc.sh", "--headers=/usr/local/include",
                                "--libs=/usr/local/lib /usr/local/bin"
-    system "make", "-j${nproc}"
+    system "make", "-j8"
     prefix.install Dir["output/*"]
   end
 
